@@ -25,10 +25,6 @@ title = slide.shapes.title
 subtitle = slide.placeholders[1]
 title.text = Titolo
 subtitle.text = Crediti
-title.alignment = PP_ALIGN.CENTER
-subtitle.alignment = PP_ALIGN.CENTER
-title.auto_size = MSO_AUTO_SIZE.SHAPE_TO_FIT_TEXT
-subtitle.auto_size = MSO_AUTO_SIZE.SHAPE_TO_FIT_TEXT
 
 for i in Sld:
     Arg1 = input("Inserisci il TITOLO del'argomento: ")
@@ -41,7 +37,7 @@ for i in Sld:
         ])
 
     message = response.choices[0]['message']
-    print("Argomento 1\n")
+    print("Argomento: \n")
     print("{}".format(message['content']))
     
     #Set title page text variables
@@ -69,7 +65,7 @@ for i in Sld:
 
 #Salva
 
-print("finito!")
+print("Finito!")
 
 prs.save("file.pptx")
 
