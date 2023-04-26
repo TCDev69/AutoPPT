@@ -32,8 +32,8 @@ for i in Sld:
     response = openai.ChatCompletion.create(
         model='gpt-3.5-turbo',
         messages=[
-            {"role": "system", "content": "dovrai scrivere un testo di tante righe, in un solo paragrafo"},
-            {"role": "user", "content": "scrivi un testo in tante parole su: " + Arg1},
+            {"role": "system", "content": "dovrai scrivere un testo di poche righe, in un solo paragrafo"},
+            {"role": "user", "content": "scrivi un testo in poche parole su: " + Arg1},
         ])
 
     message = response.choices[0]['message']
