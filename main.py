@@ -5,7 +5,7 @@ from pptx.enum.text import MSO_ANCHOR, MSO_AUTO_SIZE
 from pptx import *
 from pptx.enum.text import PP_ALIGN
 
-openai.api_key = "sk-KEY_HERE"
+openai.api_key = "KEY_HERE"
 model_engine = "gpt-3.5-turbo" 
 
 prs = Presentation()
