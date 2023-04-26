@@ -34,7 +34,7 @@ python main.py
 ```
 python3 main.py
 ```
-##API
+## API
 1. Crea una chiave da: https://platform.openai.com/account/api-keys
 2. Modifica "KEY-HERE" con ka chiave generata
 
