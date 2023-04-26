@@ -36,8 +36,8 @@ python3 main.py
 ```
 
 ## Come Usarlo
-1. Insert Title
-2. Insert Credits
-3. Insert Number of Slides
-4. Insert Argument (Title of the slide)
-5. File saved as "file.pptx"
+1. Inserisci il Titolo
+2. Inserisci i Crediti
+3. Inserisci il numero delle Slide (Senza Titolo)
+4. Inserisci il titolo dell'argomento
+5. Verra' salvato come "file.pptx"
