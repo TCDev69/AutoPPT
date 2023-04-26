@@ -34,9 +34,11 @@ python main.py
 ```
 python3 main.py
 ```
+##API
+1. Crea una chiave da: https://platform.openai.com/account/api-keys
+2. Modifica "KEY-HERE" con ka chiave generata
 
 ## Come Usarlo
-0. Crea una chiave da: https://platform.openai.com/account/api-keys
 1. Inserisci il Titolo
 2. Inserisci i Crediti
 3. Inserisci il numero delle Slide (Senza Titolo)
