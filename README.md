@@ -25,17 +25,17 @@ or
 python3 install -r requirements.txt
 ```
 
-### Start
-#### Windows:
+## Start
+### Windows:
 ```
 python main.py
 ```
-#### macOS/Linux:
+### macOS/Linux:
 ```
 python3 main.py
 ```
 
-### Use
+## Use
 1. Insert Title
 2. Insert Credits
 3. Insert Number of Slides
