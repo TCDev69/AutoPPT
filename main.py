@@ -5,10 +5,10 @@ from pptx.enum.text import MSO_ANCHOR, MSO_AUTO_SIZE
 from pptx import *
 from pptx.enum.text import PP_ALIGN
 
-openai.api_key = "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"
+openai.api_key = "KEY-HERE"
 model_engine = "gpt-3.5-turbo" 
 
-prs = Presentation()
+prs = Presentation("./Temi/Tema.pptx")
 #prs.slide_width = 11887200
 #prs.slide_height = 6686550
 
@@ -30,7 +30,7 @@ subtitle.text = Crediti
 title.alignment = PP_ALIGN.CENTER
 
 for i in Sld:
-    Arg1 = input("Inserisci il TITOLO del'argomento: ")
+    Arg1 = input("Inserisci il TITOLO della slide: ")
     ## CHATGPT
     response = openai.ChatCompletion.create(
         model='gpt-3.5-turbo',
@@ -52,7 +52,7 @@ for i in Sld:
     slide1.auto_size = MSO_AUTO_SIZE.SHAPE_TO_FIT_TEXT
 
     slide1.shapes.title.text = slide1_title
-    textbox1 = slide1.shapes.add_textbox(Inches(0.7), Inches(1.5),Inches(8.5), Inches(5.8))
+    textbox1 = slide1.shapes.add_textbox(Inches(1.2), Inches(1.5),Inches(11.3), Inches(5.8))
     textbox1.auto_size = MSO_AUTO_SIZE.SHAPE_TO_FIT_TEXT
     textframe1 = textbox1.text_frame
     paragraph1 = textframe1.add_paragraph()
