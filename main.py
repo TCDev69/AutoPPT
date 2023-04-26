@@ -5,10 +5,12 @@ from pptx.enum.text import MSO_ANCHOR, MSO_AUTO_SIZE
 from pptx import *
 from pptx.enum.text import PP_ALIGN
 
-openai.api_key = "KEY_HERE"
+openai.api_key = "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"
 model_engine = "gpt-3.5-turbo" 
 
 prs = Presentation()
+#prs.slide_width = 11887200
+#prs.slide_height = 6686550
 
 #set slide template    
 TITLE = 0
@@ -25,6 +27,7 @@ title = slide.shapes.title
 subtitle = slide.placeholders[1]
 title.text = Titolo
 subtitle.text = Crediti
+title.alignment = PP_ALIGN.CENTER
 
 for i in Sld:
     Arg1 = input("Inserisci il TITOLO del'argomento: ")
@@ -37,7 +40,7 @@ for i in Sld:
         ])
 
     message = response.choices[0]['message']
-    print("Argomento: \n")
+    print("Argomento 1\n")
     print("{}".format(message['content']))
     
     #Set title page text variables
@@ -49,7 +52,7 @@ for i in Sld:
     slide1.auto_size = MSO_AUTO_SIZE.SHAPE_TO_FIT_TEXT
 
     slide1.shapes.title.text = slide1_title
-    textbox1 = slide1.shapes.add_textbox(Inches(0.7), Inches(1.5),Inches(12), Inches(5.8))
+    textbox1 = slide1.shapes.add_textbox(Inches(0.7), Inches(1.5),Inches(8.5), Inches(5.8))
     textbox1.auto_size = MSO_AUTO_SIZE.SHAPE_TO_FIT_TEXT
     textframe1 = textbox1.text_frame
     paragraph1 = textframe1.add_paragraph()
@@ -59,13 +62,11 @@ for i in Sld:
     textframe1.vertical_anchor = MSO_ANCHOR.TOP
     textframe1.word_wrap = True
     textframe1.auto_size = MSO_AUTO_SIZE.SHAPE_TO_FIT_TEXT
-    prs.slide_width = 11887200
-    prs.slide_height = 6686550
     
 
 #Salva
 
-print("Finito!")
+print("finito!")
 
 prs.save("file.pptx")
 
