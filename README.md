@@ -1,18 +1,18 @@
 # AutoPPT
-Create PowerPoints Presentation Automatically with ChatGPT
+Crea PowerPoints in automatico con ChatGPT (3.5-Turbo)
 
-## Install
+## Installa
 ### Download:
 ```sh
 git clone https://github.com/TCDev69/AutoPPT.git
 cd AutoPPT
 ```
-### Install Dependencies
+### Installa le Dipendenze
 #### Windows:
 ```sh
 pip install -r requirements.txt
 ```
-or
+oppure
 ```
 python -m pip install -r requirements.txt
 ```
@@ -20,12 +20,12 @@ python -m pip install -r requirements.txt
 ```sh
 pip3 install -r requirements.txt
 ```
-or
+oppure
 ```
 python3 install -r requirements.txt
 ```
 
-## Start
+## Avvia
 ### Windows:
 ```
 python main.py
@@ -35,7 +35,7 @@ python main.py
 python3 main.py
 ```
 
-## Use
+## Come Usarlo
 1. Insert Title
 2. Insert Credits
 3. Insert Number of Slides
